@@ -1,0 +1,16 @@
+name: Hello world
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+     - name: ChecKout code
+       uses: actions/checKout@v3
+
+     - name: Set up Node.js
+       uses: actions/SetuP-node@v3
+       
